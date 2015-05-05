@@ -1,37 +1,91 @@
 <html>
 <head>
 <script type="text/javascript">
-function nurl(i)
+function agooglequery()
 {
-//alert('test');
-var searchquery = document.getElementById("text").value;
-var searchquerysplit = searchquery.split(" ");
-var searchqueryplus = searchquerysplit.join("+");
-if (i==1)
-{
-var win=window.open("http://www.google.com.sg/search?hl=en&output=search&sclient=psy-ab&q=" + searchqueryplus, '_blank');
-win.focus();
+docc = document.getElementById("query").value;
+url = "http://www.google.com/search?q="
+urlph = "http://www.google.com.ph/search?q="
+window.open(url+docc,'_blank');
+//return url+doc
 }
-if (i==2)
+function agoogleimgquery()
 {
-var win=window.open("http://www.google.com.sg/webhp?hl=en&output=search&sclient=psy-ab#q=" + searchqueryplus + "&hl=en&tbs=qdr:h,sbd:1&source=lnt", '_blank');
+docc = document.getElementById("query").value;
+url = "http://www.google.com/search?hl=tl&gbv=2&tbm=isch&sa=1&q="
+urlph = "http://www.google.com.ph/search?hl=tl&gbv=2&tbm=isch&sa=1&q="
+
+window.open(url+docc,'_blank');
+//return url+doc
 }
+
+function areturn()
+{
+return document.getElementById("query").value;
+}
+function acaller(text)
+{
+   alert(text);
+}
+function agoogle()
+{
+
+window.open("http:/www.google.com","GOOGLE")
+}
+function abox()
+{
+var ht = screen.availHeight;
+var wd = screen.availWidth;
+alert("message" + s);
 }
 </script>
+<title>vinniesearch</title>
+<style type="text/css">
+.style1 {
+	font-family: "Courier New", Courier, monospace;
+	text-align:center;
+	width:100%;
+	
+}
+.style2 {
+	text-align: center;
+}
+.style3 {
+	font-family: Tahoma;
+}
+.style4 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	width: 100%;
+}
+.style5 {
+	font-family: Arial, Helvetica, sans-serif;
+	width:300px;
+}
+.style6 {
+	font-size: xx-small;
+}
+</style>
 </head>
 <body>
-<center>
-<p>Welcome to vinnie google search helper !</p>
+<div class="style2">
 <br>
-<p>This will help in finding most recent entries , than clicking google advanced options. :)</p>
+<span class="style4"><strong>VinnieSearch v0.3:<br><span class="style6">| search multiple engines : open new tab |</span></strong></span><span class="style3"><br>
+</span>
 <br>
-<div id="wrap">
-<input type="text" id="text"></input>
+<span class="style1"><input type="text" id="query" style="width:536px"><br></span>
 <br>
-<button type="button" text="search" onclick="nurl(1);">search</button>
+<span class="style5">
+<input type="button" value="Google Search" onclick="agooglequery();" style="border:thin;background-color:gray;width:200px"></span><br>
+<!--<span class="style1" style="background-color:teal;width:200px;" onclick="agooglequery();">google</span><br>-->
 <br>
-<button type="button" text="search recent" onclick="nurl(2);">search recent</button>
+<span class="style5">
+<input type="button" value="Google Image" onclick="agoogleimgquery();" style="border:thin;background-color:gray;width:200px"></span><br>
+
+<!--<span class="style4" style="background-color:teal;width:200px;" onclick="agoogleimgquery();">Google Image</span><br>-->
+Yahoo!<br>
+Yahoo Images<br>
+Wikipedia<br>
 </div>
-</center>
 </body>
 </html>
