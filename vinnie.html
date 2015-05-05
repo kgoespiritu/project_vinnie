@@ -2,27 +2,28 @@
 <head>
 <script type="text/javascript">
 function nurl(i)
-	{
-	//alert('test');
-	var searchquery = document.getElementById("text").value;
-	var searchquerysplit = searchquery.split(" ");
-	var searchqueryplus = searchquerysplit.join("+");
-	if (i==1)
-		{
-		var win=window.open("http://www.google.com.sg/search?hl=en&output=search&sclient=psy-ab&q=" + searchqueryplus, '_blank');
-		win.focus();
-		}
-	if (i==2)
-	   {
-	   var win=window.open("http://www.google.com.sg/webhp?hl=en&output=search&sclient=psy-ab#q=" + searchqueryplus + "&hl=en&tbs=qdr:h,sbd:1&source=lnt", '_blank');
-	   }
-	}
+{
+//alert('test');
+var searchquery = document.getElementById("text").value;
+var searchquerysplit = searchquery.split(" ");
+var searchqueryplus = searchquerysplit.join("+");
+if (i==1)
+{
+var win=window.open("http://www.google.com.sg/search?hl=en&output=search&sclient=psy-ab&q=" + searchqueryplus, '_blank');
+win.focus();
+}
+if (i==2)
+{
+var win=window.open("http://www.google.com.sg/webhp?hl=en&output=search&sclient=psy-ab#q=" + searchqueryplus + "&hl=en&tbs=qdr:h,sbd:1&source=lnt", '_blank');
+}
+}
 </script>
 </head>
 <body>
-Welcome to vinnie google search helper !
+<center>
+<p>Welcome to vinnie google search helper !</p>
 <br>
-This will help in finding most recent entries , than clicking google advanced options. :)
+<p>This will help in finding most recent entries , than clicking google advanced options. :)</p>
 <br>
 <div id="wrap">
 <input type="text" id="text"></input>
@@ -31,5 +32,6 @@ This will help in finding most recent entries , than clicking google advanced op
 <br>
 <button type="button" text="search recent" onclick="nurl(2);">search recent</button>
 </div>
+</center>
 </body>
 </html>
