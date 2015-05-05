@@ -1,93 +1,61 @@
 <html>
+
 <head>
-<script type="text/javascript">
-function agooglequery()
-{
-docc = document.getElementById("query").value;
-url = "http://www.google.com/search?q="
-urlph = "http://www.google.com.ph/search?q="
-window.open(url+docc,'_blank');
-//return url+doc
-}
-function agoogleimgquery()
-{
-docc = document.getElementById("query").value;
-url = "http://www.google.com/search?hl=tl&gbv=2&tbm=isch&sa=1&q="
-urlph = "http://www.google.com.ph/search?hl=tl&gbv=2&tbm=isch&sa=1&q="
-
-window.open(url+docc,'_blank');
-//return url+doc
-}
-
-function areturn()
-{
-return document.getElementById("query").value;
-}
-function acaller(text)
-{
-   alert(text);
-}
-function agoogle()
-{
-
-window.open("http:/www.google.com","GOOGLE")
-}
-function abox()
-{
-var ht = screen.availHeight;
-var wd = screen.availWidth;
-alert("message" + s);
-}
-</script>
-<title>vinniesearch</title>
-<style type="text/css">
-.style1 {
-	font-family: "Courier New", Courier, monospace;
-	text-align:center;
-	width:100%;
-	
-}
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>VinnieSearch</title>
+<style>
+<!--
 .style2 {
 	text-align: center;
-}
-.style3 {
-	font-family: Tahoma;
 }
 .style4 {
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 	width: 100%;
 }
+.style6 {
+	font-size: xx-small;
+}
+.style3 {
+	font-family: Tahoma;
+}
+
+.style1 {
+	font-family: "Courier New", Courier, monospace;
+	text-align:center;
+	width:100%;
+	
+}
 .style5 {
 	font-family: Arial, Helvetica, sans-serif;
 	width:300px;
 }
-.style6 {
-	font-size: xx-small;
-}
+-->
 </style>
 </head>
+
 <body>
+
 <div class="style2">
-<br>
-<span class="style4"><strong>VinnieSearch v0.4:<br><span class="style6">| search multiple engines : open new tab |</span></strong></span><span class="style3"><br>
-</span>
-<br>
-<span class="style1"><input type="text" id="query" style="width:536px"><br></span>
-<br>
-<span class="style5">
-<input type="button" value="Google Search" onclick="agooglequery();" style="border:thin;background-color:gray;width:200px"></span>
-&nbsp;
-<span class="style5">
-<input type="button" value="Google Image" onclick="agoogleimgquery();" style="border:thin;background-color:gray;width:200px"></span><br><br>
-<span class="style5">
-<input type="button" value="Yahoo!" onclick="agoogleimgquery();" style="border:thin;background-color:gray;width:200px"></span>
-&nbsp;
-<span class="style5">
-<input type="button" value="Yahoo! Image" onclick="agoogleimgquery();" style="border:thin;background-color:gray;width:200px"></span><br>
-<br>
-<span class="style5">
-<input type="button" value="Wikipedia" onclick="agoogleimgquery();" style="border:thin;background-color:gray;width:200px"></span><br>
+	<br>
+	<span class="style4"><strong>VinnieSearch v0.4:<br>
+	<span class="style6">| search multiple engines : open new tab |</span></strong></span><span class="style3"><br>
+	</span><br>
+	<span class="style1"><input type="text" id="query" style="width:536px"></span><br><br>
+	<span class="style5">
+	<input type="button" value="Google Search" onclick="agooglequery();" style="border:thin;background-color:gray;width:200px"></span>&nbsp;&nbsp;
+	<span class="style5">
+	<input type="button" value="Google Image" onclick="agoogleimgquery();" style="border:thin;background-color:gray;width:200px"></span><br>
+	<br>
+	<span class="style5">
+	<input type="button" value="Yahoo!" onclick="agoogleimgquery();" style="border:thin;background-color:gray;width:200px"></span>&nbsp;&nbsp;
+	<span class="style5">
+	<input type="button" value="Yahoo! Image" onclick="agoogleimgquery();" style="border:thin;background-color:gray;width:200px"></span><br>
+	<br>
+	<span class="style5">
+	<input type="button" value="Wikipedia" onclick="agoogleimgquery();" style="border:thin;background-color:gray;width:200px"></span><br>
 </div>
+
 </body>
+
 </html>
